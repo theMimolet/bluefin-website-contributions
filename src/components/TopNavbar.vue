@@ -189,7 +189,7 @@ const rightNavLinks = [
 .navbar__link {
   color: var(--ifm-navbar-link-color);
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 12pt;
   font-weight: 400;
   padding: 0 0.75rem;
   line-height: 1.5;
@@ -222,7 +222,7 @@ const rightNavLinks = [
   }
 
   .navbar__link {
-    font-size: 0.675rem;
+    font-size: 11pt;
     padding: 0 0.5rem;
   }
 
