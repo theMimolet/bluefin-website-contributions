@@ -105,13 +105,13 @@ const { t } = useI18n<MessageSchema>({
               <div>
                 <div class="icon-wrap">
                   <img
-                    src="/brands/cncf.svg"
-                    alt="CNCF logo blur"
+                    src="/brands/kubernetes.svg"
+                    alt="Kubernetes logo blur"
                     loading="lazy"
                   />
                   <img
-                    src="/brands/cncf.svg"
-                    alt="CNCF logo"
+                    src="/brands/kubernetes.svg"
+                    alt="Kubernetes logo"
                     loading="lazy"
                   />
                 </div>
