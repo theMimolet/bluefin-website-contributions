@@ -58,11 +58,19 @@ const { t } = useI18n<MessageSchema>({
             <div class="brand-item">
               <div>
                 <div class="icon-wrap">
-                  <img src="/brands/ptyxis.svg" alt="Ptyxis logo blur" />
-                  <img src="/brands/ptyxis.svg" alt="Ptyxis logo" />
+                  <img
+                    src="/brands/kubernetes.svg"
+                    alt="Kubernetes logo blur"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/brands/kubernetes.svg"
+                    alt="Kubernetes logo"
+                    loading="lazy"
+                  />
                 </div>
               </div>
-              <p>{{ t("Devs.BoxTwo") }}</p>
+              <p>{{ t("Devs.BoxThree") }}</p>
             </div>
 
             <div class="brand-item">
@@ -104,19 +112,11 @@ const { t } = useI18n<MessageSchema>({
             <div class="brand-item">
               <div>
                 <div class="icon-wrap">
-                  <img
-                    src="/brands/kubernetes.svg"
-                    alt="Kubernetes logo blur"
-                    loading="lazy"
-                  />
-                  <img
-                    src="/brands/kubernetes.svg"
-                    alt="Kubernetes logo"
-                    loading="lazy"
-                  />
+                  <img src="/brands/ptyxis.svg" alt="Ptyxis logo blur" />
+                  <img src="/brands/ptyxis.svg" alt="Ptyxis logo" />
                 </div>
               </div>
-              <p>{{ t("Devs.BoxThree") }}</p>
+              <p>{{ t("Devs.BoxTwo") }}</p>
             </div>
 
             <div class="brand-item">
