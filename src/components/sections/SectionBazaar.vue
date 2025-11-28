@@ -11,6 +11,9 @@ const { t } = useI18n<MessageSchema>({
   <section id="bazaar" class="section-wrap bazaar-section">
     <div class="container bazaar-content">
       <div class="bazaar-header">
+        <div class="bazaar-tag">
+          <strong>{{ t("Bazaar.Header.Tag") }}</strong>
+        </div>
         <h2 class="title-apps">{{ t("Bazaar.Header.Title") }}</h2>
       </div>
 
@@ -65,12 +68,25 @@ const { t } = useI18n<MessageSchema>({
   text-align: left;
   margin-bottom: 60px;
 
+  .bazaar-tag {
+    margin-bottom: 10px;
+
+    strong {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      letter-spacing: 0.1em;
+    }
+  }
+
   .title-apps {
     font-family: Inter;
     font-weight: 700;
     font-size: 7rem;
     text-transform: uppercase;
     color: var(--color-text-light);
+    margin: 0;
   }
 }
 
