@@ -11,6 +11,10 @@ const { t } = useI18n<MessageSchema>({
 </script>
 
 <style scoped>
+.picker-header {
+  max-width: 800px;
+}
+
 p :deep(a) {
   @include font(700);
   color: var(--color-blue-light);
