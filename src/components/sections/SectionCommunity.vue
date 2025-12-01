@@ -79,8 +79,8 @@ const { t } = useI18n<MessageSchema>({
           </div>
         </div>
 
-        <div class="community-card community-card">
-          <img class="countme-chart" :src="BluefinGrowthChartSvg">
+        <div class="community-card growth-chart-card">
+          <img class="growth-chart" :src="BluefinGrowthChartSvg">
         </div>
       </div>
     </div>
@@ -256,15 +256,17 @@ const { t } = useI18n<MessageSchema>({
     }
   }
 
+  .growth-chart {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
   @media (max-width: 768px) {
     .community-card {
       flex-direction: column;
       text-align: center;
       padding: 24px;
-
-      .card-icon {
-        max-width: 150px;
-      }
 
       .card-content .card-buttons {
         justify-content: center;
@@ -277,6 +279,18 @@ const { t } = useI18n<MessageSchema>({
       .contrib-text .card-buttons {
         justify-content: center;
       }
+
+      .contrib-image {
+        display: none;
+      }
+    }
+
+    .growth-chart {
+      display: none;
+    }
+
+    .growth-chart-card {
+      display: none;
     }
 
     .community-header h2 {
