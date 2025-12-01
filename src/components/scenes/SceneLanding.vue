@@ -88,13 +88,11 @@ const { t } = useI18n<MessageSchema>({
             </select>
           </div>
         </div>
-        <div class="test">
             <img
             class="sm:h-full sm:w-full object-contain my-3 w-1/2 h-1/2"
             :src="Holidaysaurus"
             alt="Bluefin"
             />
-        </div>
       </div>
     </div>
     <SceneVisibilityChecker name="null" />
