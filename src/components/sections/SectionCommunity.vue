@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { MessageSchema } from '../../locales/schema'
 import { useI18n } from 'vue-i18n'
+import BluefinGrowthChartSvg from '@/assets/svg/growth_bluefins.svg'
 
 import SceneVisibilityChecker from '../common/SceneVisibilityChecker.vue'
 
@@ -76,6 +77,10 @@ const { t } = useI18n<MessageSchema>({
               <img src="https://repobeats.axiom.co/api/embed/40b85b252bf6ea25eb90539d1adcea013ccae69a.svg" alt="GitHub Repository Metrics" loading="lazy">
             </a>
           </div>
+        </div>
+
+        <div class="community-card community-card">
+          <img class="countme-chart" :src="BluefinGrowthChartSvg">
         </div>
       </div>
     </div>
