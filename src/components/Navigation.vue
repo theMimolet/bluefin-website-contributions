@@ -24,39 +24,17 @@ function scrollTo(id: string) {
 }
 
 const links: Record<string, Link> = {
-  '#scene-users': { name: 'Navbar.ForYou', icon: IconFaceManShimmer },
-  '#scene-developers': { name: 'Navbar.ForDevs', icon: IconCodeBraces },
-  // '#scene-gamers': { name: 'Gamers', icon: IconControllerClassic },
-  '#scene-mission': { name: 'Navbar.OurMission' },
-  '#scene-picker': { name: 'Navbar.TryOut', icon: IconDownload },
-  '#community': { name: 'Navbar.Community' }
+  "#scene-users": { name: "Navbar.ForYou", icon: IconFaceManShimmer },
+  "#scene-developers": { name: "Navbar.ForDevs", icon: IconCodeBraces },
+  "#scene-mission": { name: "Navbar.OurMission" },
+  "#scene-picker": { name: "Navbar.TryOut", icon: IconDownload },
+  "#scene-community": { name: "Navbar.Community" }
 }
 
 const linksAmount = Object.keys(links).length
 const visibleSection = inject('visibleSection') as WritableComputedRef<string>
 const offset = ref<number>(0)
 
-onMounted(() => {
-  watch(
-    visibleSection,
-    (section: string) => {
-      if (!section) {
-        return
-      }
-
-      const el = document.querySelector(`[data-section="${section}"]`)
-
-      if (el) {
-        offset.value = Array.from(el.parentElement?.childNodes ?? []).indexOf(
-          el
-        )
-      }
-    },
-    { immediate: true }
-  )
-})
-
-//
 // Scroll up stuff
 const showButtonUp = ref(false)
 useEventListener(window, 'scroll', () => {
@@ -80,6 +58,18 @@ function scrollUp() {
 const { t } = useI18n<MessageSchema>({
   useScope: 'global'
 })
+
+watch(
+  visibleSection,
+  (section: string) => {
+    if (!section) return
+    const el = document.querySelector(`[data-section="${section}"]`)
+
+    if (el)
+      offset.value = Array.from(el.parentElement?.childNodes ?? []).indexOf(el)
+  },
+  { immediate: true }
+)
 </script>
 
 <template>

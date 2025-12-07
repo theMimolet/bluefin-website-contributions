@@ -2,13 +2,16 @@
 import type { MessageSchema } from '../../locales/schema'
 import { useI18n } from 'vue-i18n'
 
+import { useI18n } from "vue-i18n"
+import SceneVisibilityChecker from "../common/SceneVisibilityChecker.vue"
+import type { MessageSchema } from "../../locales/schema"
 const { t } = useI18n<MessageSchema>({
   useScope: 'global'
 })
 </script>
 
 <template>
-  <section id="community" class="section-wrap">
+  <section id="scene-community" class="section-wrap">
     <div class="container">
       <div class="community-content">
         <div class="community-header">
@@ -77,11 +80,12 @@ const { t } = useI18n<MessageSchema>({
         </div>
       </div>
     </div>
+    <SceneVisibilityChecker name="#scene-community" />
   </section>
 </template>
 
 <style scoped lang="scss">
-#community {
+#scene-community {
   background-color: var(--color-bg);
 
   .container {
