@@ -60,9 +60,8 @@ const releases = [
   {
     id: 'lts',
     title: 'Bluefin LTS',
-    subtitle: 'For professionals and AI/ML engineers',
-    description:
-      'A long term support experience on an enterprise-grade foundation.',
+    subtitle: t('TryBluefin.LTS.Subtitle'),
+    description: t('TryBluefin.LTS.Description'),
     image: './characters/achillobator.webp',
     supportedArch: ['x86', 'arm'],
     recommended: false

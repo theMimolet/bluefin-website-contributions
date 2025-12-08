@@ -22,7 +22,7 @@ const { t } = useI18n<MessageSchema>({
       <div class="img-wrap">
         <img
           :src="LangUsersBluefinImageURL"
-          :alt="t('Users.ArtworkDescription')"
+          :alt="t('Users.DinoAlt')"
         >
       </div>
 
@@ -30,7 +30,7 @@ const { t } = useI18n<MessageSchema>({
         <SceneContent
           tag="Users.Tag"
           title="Users.Title"
-          text="Users.Text"
+          text="Users.WhatIs"
         >
           <div class="brand-grid">
             <div
@@ -44,7 +44,7 @@ const { t } = useI18n<MessageSchema>({
 
           <div
             v-if="LangUsersAppendix"
-            v-html="marked.parse(t('Users.Appendix'))"
+            v-html="marked.parse(t('Users.Features'))"
           />
         </SceneContent>
       </div>

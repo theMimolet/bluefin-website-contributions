@@ -16,7 +16,7 @@ const { t } = useI18n<MessageSchema>({
       <div class="community-content">
         <div class="community-header">
           <div class="community-tag">
-            <strong>{{ t("Community.Tag") }}</strong>
+            <strong>{{ t("Community.PreTitle") }}</strong>
           </div>
           <h2>{{ t("Community.Title") }}</h2>
         </div>
