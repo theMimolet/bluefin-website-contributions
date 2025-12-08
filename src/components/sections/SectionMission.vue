@@ -50,7 +50,7 @@ const { t } = useI18n<MessageSchema>({
           <img
             class="container"
             :src="LangMissionBluefinImageURL"
-            :alt="t('Misson.BluefinChillAlt')"
+            :alt="t('Mission.BluefinChillAlt')"
           >
         </div>
       </Transition>

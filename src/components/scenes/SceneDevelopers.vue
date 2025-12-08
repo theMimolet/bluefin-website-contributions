@@ -21,7 +21,7 @@
           <img
             class="container"
             :src="LangDevsTowerImageURL"
-            :alt="t('Devs.ArtworkDescription')"
+            :alt="t('Devs.KarlArtworkAlt')"
           >
         </div>
         <div class="scene-arrow">
