@@ -31,7 +31,7 @@ const { t } = useI18n<MessageSchema>({
         <SceneContent
           tag="Users.Tag"
           title="Users.Title"
-          text="Users.WhatIs"
+          text="Users.Intro"
         >
           <div class="brand-grid">
             <div

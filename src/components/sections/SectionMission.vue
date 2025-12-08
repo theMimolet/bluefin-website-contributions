@@ -23,9 +23,18 @@ const { t } = useI18n<MessageSchema>({
       <SceneContent
           tag="Mission.Tag"
           title="Mission.Title"
-          text="Mission.MainText"
+          text="Mission.Text.NewBreed"
           @visible="vis = true"
         >
+        <p
+          v-html="marked.parse(t('Mission.Text.Change'))"
+        />
+        <p
+          v-html="marked.parse(t('Mission.Text.CloudNative'))"
+        />
+        <p
+          v-html="marked.parse(t('Mission.Text.Sustainability'))"
+        />
         <SceneQuote
           quote="SpreadQuote.Quote"
           author="SpreadQuote.Author"

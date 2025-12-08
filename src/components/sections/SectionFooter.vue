@@ -107,8 +107,11 @@ const { t } = useI18n<MessageSchema>({
       </div>
 
       <div>
-        <strong class="footer-title">{{ t("Footer.ProjectTitle") }}</strong>
-        <p v-html="marked.parse(t('Footer.Project'))" />
+        <strong class="footer-title">{{ t("Footer.Project.Title") }}</strong>
+        <span style='display:inline-flex; align-items:center; gap:6px;'> <a class='ub-badge' href='https://universal-blue.org' target='_blank' rel='noopener noreferrer' style='display:inline-flex; align-items:center; text-decoration:none;'><img src='/brands/universal-blue.svg' alt='Universal Blue' style='height:2em;'/><span style='margin-left:4px;'>Universal Blue</span></a></span>
+        <br>
+        <div v-html="marked.parse(t('Footer.Project.Ublue'))" />
+        <br>
         <ul class="footer-links">
           <li v-for="item in LangSocialLinks" :key="item.text">
             <a :href="item.link">
@@ -117,10 +120,16 @@ const { t } = useI18n<MessageSchema>({
             </a>
           </li>
         </ul>
-
         <hr>
-
-        <p v-html="marked.parse(t('Footer.References'))" />
+        <p v-html="marked.parse(t('Footer.Credits.Intro'))" />
+        <ul>
+          <li v-html="marked.parse(t('Footer.Credits.Website'))"/>
+          <li v-html="marked.parse(t('Footer.Credits.Logos'))"/>
+          <li v-html="marked.parse(t('Footer.Credits.ImageEdit'))"/>
+          <li v-html="marked.parse(t('Footer.Credits.Wallpapers'))"/>
+          <li v-html="marked.parse(t('Footer.Credits.Translations'))"/>
+          <li v-html="marked.parse(t('Footer.Credits.Thanks'))"/>
+        </ul>
 
         <div style="flex: 1" />
         <p class="copyright">
