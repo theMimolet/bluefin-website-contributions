@@ -171,7 +171,9 @@
   },
   "News": {
     "Title": "News",
-    "ViewAll": "View all posts on the official blog →"
+    "Loading": "Loading blog posts...",
+    "NoPosts": "No blog posts found.",
+    "ViewAll": "View all posts on the official blog"
   },
   "Flock": {
     "Title": "Our Flock",
